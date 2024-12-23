@@ -1,4 +1,4 @@
-const baseApiUrl = Cypress.config('baseApiUrl');
+const baseApiUrl = 'https://29.javascript.htmlacademy.pro/kekstagram';
 const APIRoute = {
   GET: `${baseApiUrl}/data`,
   POST: `${baseApiUrl}/`,

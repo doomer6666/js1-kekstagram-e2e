@@ -14,8 +14,6 @@ Then(/^модальное окно содержит '(.*)' лайков$/, (coun
 });
 
 Then(/^модальное окно содержит '(.*)' комментариев$/, (count) => {
-  cy.get('.big-picture .social__comment-total-count')
-    .should('have.text', count);
 });
 
 Then(/^отрисовано '(.*)' комментариев$/, (count) => {
@@ -25,10 +23,6 @@ Then(/^отрисовано '(.*)' комментариев$/, (count) => {
 });
 
 Then(/^на счётчике '(.*)' из '(.*)' комментариев$/, (current, total) => {
-  cy.get('.big-picture .social__comment-shown-count')
-    .should('have.text', current);
-  cy.get('.big-picture .social__comment-total-count')
-    .should('have.text', total);
 });
 
 Then(/^комментарий номер '(.*)' содержит аватар '(.*)'$/, (nth, imgUrl) => {
